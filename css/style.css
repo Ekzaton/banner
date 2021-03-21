@@ -1,0 +1,435 @@
+@font-face 
+{
+  font-family: "Myriad Pro";
+  src: 
+    url("../fonts/myriadpro.woff2") format("woff2"), 
+    url("../fonts/myriadpro.woff") format("woff");
+  font-display: swap; 
+}
+
+@font-face 
+{
+  font-family: "VTB Group Cond Book";
+  src: 
+    url("../fonts/vtbgroupcondbook.woff2") format("woff2"), 
+    url("../fonts/vtbgroupcondbook.woff") format("woff");
+  font-display: swap; 
+}
+
+@font-face 
+{
+  font-family: "VTB Group Cond ExtraBold";
+  src: 
+    url("../fonts/vtbgroupcondextrabold.woff2") format("woff2"), 
+    url("../fonts/vtbgroupcondextrabold.woff") format("woff");
+  font-display: swap; 
+}
+
+@font-face 
+{
+  font-family: "VTB Group Cond Light";
+  src: 
+    url("../fonts/vtbgroupcondlight.woff2") format("woff2"), 
+    url("../fonts/vtbgroupcondlight.woff") format("woff");
+  font-display: swap; 
+}
+
+@font-face 
+{
+  font-family: "VTB Group Light";
+  src: 
+    url("../fonts/vtbgrouplight.woff2") format("woff2"), 
+    url("../fonts/vtbgrouplight.woff") format("woff");
+  font-display: swap; 
+}
+
+body
+{
+  margin: 0;
+
+  font-family: "VTB Group Cond Book", "Arial";
+
+  line-height: 1;
+
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  background-color: #0046b9;
+  background-image: url("../img/bg_mobile.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container
+{
+  margin: auto 10.7vw;
+}
+
+.header
+{
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 5vh;
+}
+
+.header__intro
+{
+  margin: 0;
+  padding-top: 2.75vh;
+
+  font-family: "VTB Group Cond Light";
+  font-size: 3.89vw;
+}
+
+.header__offer
+{
+  margin: 0;
+  margin-top: 2.3vh;
+  margin-left: -10.7vw;
+  padding-top: 0.56vh;
+  padding-bottom: 0.56vh;
+  padding-left: 10.7vw;
+
+  font-size: 4.61vw;
+  font-weight: normal;
+
+  text-transform: capitalize;
+
+  background-image: url("../img/shape_1.svg");
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.header__logo
+{
+  width: 34.12vw;
+  height: 12.08vw;
+}
+
+.main
+{
+  margin-left: -10.7vw;
+  padding-top: 1.9vh;
+  padding-bottom: 0.5vh;
+  padding-left: 10.7vw;
+
+  background-image: url("../img/shape_2.svg");
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.main__slogan
+{
+  max-width: 65vw;
+
+  margin: 0;
+  
+  font-family: "VTB Group Cond ExtraBold", "Arial";
+  font-size: 6.08vw;
+}
+
+.asterisk
+{
+  font-size: 3.62vw;
+}
+
+.main__description
+{
+  max-width: 40vw;
+
+  margin-top: 0.3vh;
+  margin-bottom: 0;
+  
+  font-size: 3.07vw;
+
+  line-height: 1.17; 
+}
+
+.main__advantages
+{ 
+  display: flex;
+
+  margin-top: 1.7vh;
+  padding: 0;
+
+  font-size: 2.71vw;
+
+  line-height: 1.2;
+
+  list-style: none;
+}
+
+.main__advantages li
+{ 
+  position: relative;
+
+  flex-basis: 16.8vw;
+
+  padding-left: 9.5vw;
+}
+
+.main__advantages li:first-of-type::before,
+.main__advantages li:last-of-type::before
+{
+  position: absolute;
+  content: "";
+  top: 0.7vw;
+  left: 0.7vw;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main__advantages li:first-of-type::before
+{ 
+  width: 8.05vw;
+  height: 8.05vw;
+
+  background-image: url("../img/advantage_1.png");
+}
+
+.main__advantages li:last-of-type::before
+{ 
+  width: 7.78vw;
+  height: 7.92vw;
+
+  background-image: url("../img/advantage_2.png");
+}
+
+.double-asterisk
+{
+  font-size: 1.39vw;
+}
+
+.footer
+{
+  margin-top: 37.03vh;
+}
+
+.footer__button
+{
+  display: block;
+
+  padding: 1.33vh;
+
+  font-family: "VTB Group Light", "Arial";
+  font-size: 5.99vw;
+
+  letter-spacing: 0.08em;
+
+  text-decoration: none;
+  text-align: center;
+
+  color: #ffffff;
+  background-color: #00aaff;
+
+  border-radius: 1vw;
+}
+
+.footer__additions
+{
+  margin-top: 2.97vh;
+}
+
+.advertiser
+{
+  display: flex;
+}
+
+.advertiser__conatcts
+{
+  width: 52.08vw;
+  height: 9.17vw;
+}
+
+.advertiser__license
+{
+  margin: 0;
+  padding-top: 0.15vh;
+  padding-left: 5.28vw;
+
+  font-size: 1.94vw;
+
+  line-height: 1.2;
+}
+
+.footer__notes
+{
+  margin: 0;
+  margin-top: 0.7vh;
+  padding: 0;
+  padding-right: 39vw;
+  
+  font-family: "Myriad Pro", "Arial";
+  font-size: 1.64vw;
+
+  letter-spacing: -0.03em;
+
+  list-style: none; 
+}
+
+@media (max-width: 460px) and (min-height: 740px)
+{
+  .footer
+  {
+    margin-top: 42vh;
+  }
+}
+
+@media (min-width: 721px)
+{
+  body
+  {
+    background-image: url("../img/bg_desktop.png");
+  }
+
+  .container
+  {
+    margin: auto 5.07vw auto 4.3vw;
+  }
+
+  .header
+  {
+    margin-top: 7vh;
+  } 
+
+  .header__intro
+  {
+    padding-top: 1.2vh;
+
+    font-size: 2.74vw;
+  } 
+
+  .header__offer
+  {
+    margin: 0;
+    margin-top: 2.7vh;
+    margin-left: -6.7vw;
+    padding-top: 1.1vh;
+    padding-bottom: 1.1vh;
+    padding-left: 6.7vw;
+
+    font-size: 2.79vw;
+  }
+
+  .header__logo
+  {
+    width: 19.14vw;
+    height: 6.8vw;
+  }
+
+  .main
+  {
+    margin-left: -6.7vw;
+    padding-top: 3.5vh;
+    padding-bottom: 0.9vh;
+    padding-left: 6.7vw;
+  }
+
+  .main__slogan
+  {
+    max-width: 38vw;
+
+    font-size: 3.68vw;
+  }
+
+  .asterisk
+  {
+    font-size: 2.2vw;
+  }
+
+  .main__description
+  {
+    max-width: 25vw;
+  
+    margin-top: 0.7vh;
+    
+    font-size: 1.86vw;
+  
+    line-height: 1.17; 
+  }
+
+  .main__advantages
+  { 
+    margin-top: 3.3vh;
+  
+    font-size: 1.64vw;
+  }
+
+  .main__advantages li
+  { 
+    flex-basis: 10.2vw;
+
+    padding-left: 5.5vw;
+  }
+
+  .main__advantages li:first-of-type::before,
+  .main__advantages li:last-of-type::before
+  {
+    top: 0.23vw;
+    left: 0.23vw;
+  }
+  
+  .main__advantages li:first-of-type::before
+  { 
+    width: 4.84vw;
+    height: 4.84vw;
+  }
+  
+  .main__advantages li:last-of-type::before
+  { 
+    width: 4.7vw;
+    height: 4.77vw;
+  }
+  
+  .double-asterisk
+  {
+    font-size: 1vw;
+  } 
+
+  .footer
+  {
+    display: flex;
+    flex-basis: 45vw;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    margin-top: 9.05vh;
+  }
+
+  .footer__button
+  {
+    margin: 8.2vh 0 auto;
+    padding: 2.24vh 11.88vh;
+
+    font-size: 3.19vw;
+
+    border-radius: 0.5vw;
+  }
+  
+  .advertiser__conatcts
+  {
+    width: 30.78vw;
+    height: 7.58vw;
+  }
+
+  .advertiser__license
+  {
+    display: none;
+  }
+
+  .footer__notes
+  {
+    margin-top: 0.6vh;
+    padding-right: 0;
+    
+    font-size: 0.88vw;
+  }
+}
